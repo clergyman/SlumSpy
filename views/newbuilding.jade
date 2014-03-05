@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddBuilding(name="addbuilding",method="post",action="/addbuilding")
+        input#inputBuildingBorough(type="text", placeholder="borough", name="borough")
+        input#inputBuildingStreet(type="text", placeholder="street", name="street")
+        input#inputBuildingNumber(type="text", placeholder="number", name="number")
+        input#inputBuildingCorpus(type="corpus", placeholder="corpus", name="corpus")
+        input#inputBuildingLongitude(type="text", placeholder="longitude", name="lon")
+        input#inputBuildingLatitude(type="text", placeholder="latitude", name="lat")
+
+        button#btnSubmit(type="submit") submit

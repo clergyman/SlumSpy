@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Buildings List
+    ul
+        each building, i in buildingslist
+            li
+                "#{building.street}"
